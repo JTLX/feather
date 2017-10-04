@@ -6,5 +6,5 @@ from rest_framework import serializers
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
-        fields = ('title', 'description', 'priority', 'todo_list', 'due_date', 'start_date', 'end_date')
+        fields = ('owner', 'title', 'description', 'priority', 'todo_list', 'due_date', 'start_date', 'end_date')
 
